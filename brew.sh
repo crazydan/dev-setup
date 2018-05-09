@@ -137,6 +137,9 @@ heroku update
 
 # Core casks
 brew cask install --appdir="/Applications" alfred
+brew cask install --appdir="/Applications" istat-menus
+brew cask install --appdir="/Applications" bartender
+brew cask install --appdir="/Applications" karabiner
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" xquartz
 
@@ -150,11 +153,27 @@ brew cask install --appdir="/Applications" macdown
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox
+
+# Chat
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
+brew cask install --appdir="/Applications" qq
+brew cask install --appdir="/Applications" electronic-wechat
+brew cask install --appdir="/Applications" whatsapp
+brew cask install --appdir="/Applications" google-chat
+
+# Cloud drives
 brew cask install --appdir="/Applications" dropbox
+brew cask install --appdir="/Applications" google-drive-file-stream
+
+# Notes
 brew cask install --appdir="/Applications" evernote
+brew cask install --appdir="/Applications" omnifocus
+
+# Keychains
 brew cask install --appdir="/Applications" 1password
+
+# Drawing
 #brew cask install --appdir="/Applications" gimp
 #brew cask install --appdir="/Applications" inkscape
 
