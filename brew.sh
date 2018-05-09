@@ -19,7 +19,7 @@ fi
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -34,7 +34,6 @@ brew install findutils
 brew install gnu-sed --with-default-names
 # Install Bash 4.
 brew install bash
-brew tap homebrew/versions
 brew install bash-completion2
 # We installed the new shell, now we have to activate it
 echo "Adding the newly installed shell to the list of allowed shells"
@@ -43,8 +42,8 @@ sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
 # Change to the new shell, prompts for password
 chsh -s /usr/local/bin/bash
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
+# Install `wget`
+brew install wget
 
 # Install RingoJS and Narwhal.
 # Note that the order in which these are installed is important;
@@ -64,9 +63,6 @@ grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
 brew install homebrew/php/php55 --with-gmp
 
 # Install font tools.
