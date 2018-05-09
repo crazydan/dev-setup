@@ -27,6 +27,12 @@ function runDots() {
             echo ""
             ./osxprep.sh
         fi
+
+        # Add support for SDKMAN
+        curl -s "https://get.sdkman.io" | bash
+        source "/Users/dachan/.sdkman/bin/sdkman-init.sh"
+        sdk install java
+
         if [ $ARG == "brew" ] || [ $ARG == "all" ]; then
             # Run the brew.sh Script
             # For a full listing of installed formulae and apps, refer to

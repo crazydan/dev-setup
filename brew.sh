@@ -45,6 +45,9 @@ chsh -s /usr/local/bin/bash
 # Install `wget`
 brew install wget
 
+# Install Java cause it's required by many of the packages below
+#brew cask install caskroom/versions/java8
+
 # Install RingoJS and Narwhal.
 # Note that the order in which these are installed is important;
 # see http://git.io/brew-narwhal-ringo.
@@ -135,7 +138,6 @@ heroku update
 # Core casks
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="~/Applications" iterm2
-brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
